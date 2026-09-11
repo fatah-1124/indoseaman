@@ -46,6 +46,8 @@ function Header() {
                 <div className="collapse navbar-collapse" id="navbarMenu">
                     <ul className="navbar-nav ms-auto gap-2">
                         <li className="nav-item"><a className="btn btn-light" href="/beranda">{language === 'en' ? 'Home' : 'Beranda'}</a></li>
+                        <li className="nav-item"><a className="btn btn-light" href="layanan.html">{language === 'en' ? 'Services' : 'Layanan'}</a></li>
+                        <li className="nav-item"><a className="btn btn-light" href="profil.html">{language === 'en' ? 'Profile' : 'Profil'}</a></li>
                         <li className="nav-item"><a className="btn btn-light" href="kontak.html">{language === 'en' ? 'Contact' : 'Kontak'}</a></li>
                     </ul>
                 </div>
