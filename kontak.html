@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hubungi IndoSeaman." />
+    <style>
+      body {
+        position: relative;
+        min-height: 100vh;
+        background: #eef3f5;
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        content: '';
+        background:
+          linear-gradient(rgba(238, 243, 245, 0.52), rgba(238, 243, 245, 0.68)),
+          url('/indoseaman/images/kapal1.jpg') center / cover no-repeat;
+      }
+
+      body > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-card {
+        max-width: 760px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.94);
+      }
+    </style>
+    <title>Kontak IndoSeaman</title>
+    <script type="module" crossorigin src="/indoseaman/assets/Footer-BB7dF6l3.js"></script>
+    <script type="module" crossorigin src="/indoseaman/assets/static-page-BXKRwnav.js"></script>
+    <link rel="stylesheet" crossorigin href="/indoseaman/assets/Footer-CpzOBGAa.css">
+    <link rel="stylesheet" crossorigin href="/indoseaman/assets/static-page-B8e85e9G.css">
+    <link rel="stylesheet" crossorigin href="/indoseaman/assets/bootstrap-CKV_IQd3.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">IndoSeaman</a>
+        <div class="static-language-switcher ms-auto me-3" aria-label="Pilih Bahasa">
+          <button class="static-language-button" type="button" data-language="id">ID</button>
+          <button class="static-language-button" type="button" data-language="en">EN</button>
+        </div>
+        <a class="btn btn-outline-light btn-sm" href="index.html" data-i18n="nav.back">Kembali ke beranda</a>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section class="contact-card card border-0 shadow-sm p-4 p-md-5">
+        <header class="mb-4">
+          <p class="text-primary text-uppercase fw-bold mb-2" data-i18n="contact.eyebrow">Mari terhubung</p>
+          <h1 class="display-5 fw-bold" data-i18n="contact.title">Hubungi IndoSeaman</h1>
+          <p class="lead text-secondary mb-0" data-i18n="contact.intro">Punya pertanyaan atau ingin berkolaborasi? Kirimkan pesan kepada kami.</p>
+        </header>
+
+        <form action="https://formsubmit.co/fatah@deepwater.my.id" method="POST">
+          <input type="hidden" name="_subject" value="Pesan baru dari website IndoSeaman" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold" for="name" data-i18n="contact.name">Nama</label>
+            <input class="form-control" type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold" for="email" data-i18n="contact.email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="mb-4">
+            <label class="form-label fw-semibold" for="message" data-i18n="contact.message">Pesan</label>
+            <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button class="btn btn-primary px-4" type="submit" data-i18n="contact.submit">Kirim pesan</button>
+        </form>
+      </section>
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>

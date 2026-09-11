@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/indoseaman/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Profil IndoSeaman, platform maritim Indonesia." />
+    <title>Profil IndoSeaman</title>
+    <style>
+      :root {
+        color: #f7faf8;
+        background: #071d2b;
+        font-family: Arial, sans-serif;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+      a { color: inherit; }
+
+      .profile-page {
+        min-height: 100vh;
+        color: #ffffff;
+        background: linear-gradient(135deg, #071d2b 0%, #0a3443 58%, #0b5360 100%);
+      }
+
+      .profile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(1126px, calc(100% - 48px));
+        margin: 0 auto;
+        padding: 26px 0;
+      }
+
+      .brand { font-family: Georgia, serif; font-size: 1.35rem; font-weight: 700; text-decoration: none; }
+      .back-link { color: #f4c95d; font-size: 0.85rem; font-weight: 700; text-decoration: none; }
+      .profile-page h1 .title-main { color: #f7faf8; }
+      .static-language-switcher { display: flex; align-items: center; gap: 0.35rem; margin-left: auto; margin-right: 1.25rem; }
+      .static-language-button { padding: 0.25rem 0.45rem; border: 1px solid rgba(255,255,255,.55); border-radius: 4px; color: #fff; background: transparent; font-size: .75rem; font-weight: 600; cursor: pointer; }
+      .static-language-button:hover, .static-language-button:focus-visible { color: #17212b; background: #fff; }
+
+      .profile-hero {
+        width: min(1126px, calc(100% - 48px));
+        margin: 0 auto;
+        padding: 84px 0 100px;
+      }
+
+      .eyebrow { color: #f4c95d; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+      .profile-page h1 { max-width: 800px; margin: 20px 0 28px; font-family: Georgia, serif; font-size: clamp(3.5rem, 8vw, 6.4rem); font-weight: 400; line-height: 0.98; letter-spacing: -0.06em; }
+      .profile-page h1 span { color: #f4c95d; }
+      .intro { max-width: 630px; color: rgba(247, 250, 248, 0.74); font-size: 1.1rem; line-height: 1.75; }
+
+      .profile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 74px; border-top: 1px solid rgba(255,255,255,.22); border-bottom: 1px solid rgba(255,255,255,.22); }
+      .profile-card { padding: 30px 28px 34px 0; }
+      .profile-card + .profile-card { padding-left: 28px; border-left: 1px solid rgba(255,255,255,.22); }
+      .profile-card strong { display: block; margin-bottom: 10px; color: #f4c95d; font-family: Georgia, serif; font-size: 2.3rem; font-weight: 400; }
+      .profile-card h2 { margin: 0 0 10px; font-size: 1rem; }
+      .profile-card p { margin: 0; color: rgba(247, 250, 248, 0.65); font-size: .92rem; line-height: 1.65; }
+
+      @media (max-width: 700px) {
+        .profile-nav, .profile-hero { width: min(100% - 40px, 1126px); }
+        .profile-hero { padding-top: 62px; }
+        .profile-grid { grid-template-columns: 1fr; }
+        .profile-card, .profile-card + .profile-card { padding: 26px 0; border-left: 0; }
+        .profile-card + .profile-card { border-top: 1px solid rgba(255,255,255,.22); }
+      }
+    </style>
+    <script type="module" crossorigin src="/indoseaman/assets/Footer-BB7dF6l3.js"></script>
+    <script type="module" crossorigin src="/indoseaman/assets/static-page-BXKRwnav.js"></script>
+    <link rel="stylesheet" crossorigin href="/indoseaman/assets/Footer-CpzOBGAa.css">
+    <link rel="stylesheet" crossorigin href="/indoseaman/assets/static-page-B8e85e9G.css">
+  </head>
+  <body>
+    <div class="profile-page">
+      <nav class="profile-nav" aria-label="Navigasi profil">
+        <a class="brand" href="index.html">IndoSeaman</a>
+        <div class="static-language-switcher" aria-label="Pilih Bahasa">
+          <button class="static-language-button" type="button" data-language="id">ID</button>
+          <button class="static-language-button" type="button" data-language="en">EN</button>
+        </div>
+        <a class="back-link" href="index.html">&larr; <span data-i18n="nav.back">Kembali ke beranda</span></a>
+      </nav>
+
+      <main class="profile-hero">
+        <p class="eyebrow" data-i18n="profile.eyebrow">Tentang IndoSeaman</p>
+        <h1><span class="title-main" data-i18n="profile.title">Menjaga laut,</span><br /><span data-i18n="profile.titleAccent">menguatkan manusia.</span></h1>
+        <p class="intro">
+          <span data-i18n="profile.intro">IndoSeaman adalah ruang digital bagi pelaut dan seluruh ekosistem maritim Indonesia. Kami mempertemukan talenta, pengetahuan, dan peluang agar industri maritim tumbuh lebih terbuka dan berkelanjutan. Platform ini dibangun oleh seorang Software Engineer yang juga masih aktif sebagai pelaut. Untuk mengenalnya lebih detil, silahkan klik</span> <a href="https://www.deepwater.my.id" data-i18n="profile.link">DeepWater Solutions</a>.
+        </p>
+
+        <section class="profile-grid" aria-label="Nilai utama IndoSeaman" data-i18n-aria-label="profile.values">
+          <article class="profile-card">
+            <strong>01</strong>
+            <h2 data-i18n="profile.card1.title">Koneksi yang berarti</h2>
+            <p data-i18n="profile.card1.text">Membangun jaringan profesional yang mempertemukan pelaut, perusahaan, dan komunitas.</p>
+          </article>
+          <article class="profile-card">
+            <strong>02</strong>
+            <h2 data-i18n="profile.card2.title">Peluang yang setara</h2>
+            <p data-i18n="profile.card2.text">Membuka akses informasi karier dan pengembangan diri bagi insan maritim di seluruh Indonesia.</p>
+          </article>
+          <article class="profile-card">
+            <strong>03</strong>
+            <h2 data-i18n="profile.card3.title">Masa depan berkelanjutan</h2>
+            <p data-i18n="profile.card3.text">Mendorong inovasi dan kolaborasi untuk laut yang sehat serta industri yang bertanggung jawab.</p>
+          </article>
+        </section>
+      </main>
+      <div id="footer"></div>
+    </div>
+    </body>
+</html>
