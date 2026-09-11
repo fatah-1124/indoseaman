@@ -1,0 +1,22 @@
+html body .static-language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.static-language-button {
+  padding: 0.25rem 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 4px;
+  color: #fff;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.static-language-button:hover,
+.static-language-button:focus-visible {
+  color: #17212b;
+  background: #fff;
+}

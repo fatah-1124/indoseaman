@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubungi IndoSeaman.">
+    <title>Kontak IndoSeaman</title>
+    <link rel="stylesheet" href="./src/assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/assets/bootstrap.css" />
+    <link rel="stylesheet" href="./src/assets/bootstrap.bundle.min.js" />
+    <style>
+      body {
+        position: relative;
+        min-height: 100vh;
+        background: #eef3f5;
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        content: '';
+        background:
+          linear-gradient(rgba(238, 243, 245, 0.52), rgba(238, 243, 245, 0.68)),
+          url('/images/kapal1.jpg') center / cover no-repeat;
+        opacity: 1;
+      }
+
+      body > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .navbar,
+      .card {
+        position: relative;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.94);
+      }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Hubungi IndoSeaman</h1>
+        <form action="https://formsubmit.co/fatah@deepwater.my.id" method="POST">
+            <input type="hidden" name="_subject" value="Pesan baru dari website IndoSeaman">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Kirim pesan</button>
+        </form>
+    </main>
+</body>
+</html>

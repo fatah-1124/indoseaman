@@ -1,0 +1,101 @@
+body {
+	margin-top: 0;
+}
+
+.social-share {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
+}
+
+.social-share p {
+	margin: 0;
+	margin-right: 1rem;
+}
+
+.social-share .astro-social-share {
+	display: flex;
+	justify-content: center;
+}
+
+.social-share .astro-social-share a {
+	display: block;
+	width: 20px;
+	margin: 0 0.5rem;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+#google_translate_element {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+
+#google_translate_element .goog-te-gadget {
+	color: transparent;
+	font-size: 0;
+	white-space: nowrap;
+}
+
+.language-switcher {
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.language-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	padding: 0.35rem 0.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.45);
+	border-radius: 4px;
+	color: #ffffff;
+	background: transparent;
+	font-size: 0.75rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.language-button:hover,
+.language-button:focus-visible {
+	color: #17212b;
+	background: #ffffff;
+}
+
+.language-flag {
+	display: inline-block;
+	width: 1.25rem;
+	height: 0.85rem;
+	flex: 0 0 auto;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: 1px;
+}
+
+.language-flag-id {
+	background: linear-gradient(to bottom, #e31b23 0 50%, #ffffff 50% 100%);
+}
+
+.language-flag-en {
+	background:
+		linear-gradient(to bottom right, transparent 46%, #ffffff 46% 54%, transparent 54%),
+		linear-gradient(to bottom left, transparent 46%, #ffffff 46% 54%, transparent 54%),
+		linear-gradient(to bottom right, transparent 47%, #cf142b 47% 53%, transparent 53%),
+		linear-gradient(to bottom left, transparent 47%, #cf142b 47% 53%, transparent 53%),
+		linear-gradient(to right, transparent 40%, #ffffff 40% 60%, transparent 60%),
+		linear-gradient(to bottom, #012169 0 100%);
+}
+
+.goog-te-banner-frame {
+	display: none !important;
+}
+
+body {
+	top: 0 !important;
+}
+

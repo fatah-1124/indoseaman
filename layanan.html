@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Layanan IndoSeaman untuk pelaut dan ekosistem maritim Indonesia." />
+    <link rel="stylesheet" href="./src/assets/bootstrap.min.css" />
+    <style>
+      body {
+        position: relative;
+        min-height: 100vh;
+        background: #eef3f5;
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        content: '';
+        background:
+          linear-gradient(rgba(238, 243, 245, 0.52), rgba(238, 243, 245, 0.68)),
+          url('/images/kapal1.jpg') center / cover no-repeat;
+        opacity: 1;
+      }
+
+      body > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .navbar,
+      .card {
+        position: relative;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.94);
+      }
+    </style>
+    <title>Layanan IndoSeaman</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">IndoSeaman</a>
+        <div class="static-language-switcher ms-auto me-3" aria-label="Pilih Bahasa">
+          <button class="static-language-button" type="button" data-language="id">ID</button>
+          <button class="static-language-button" type="button" data-language="en">EN</button>
+        </div>
+        <a class="btn btn-outline-light btn-sm" href="index.html" data-i18n="nav.back">Kembali ke beranda</a>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <header class="mb-5">
+        <p class="text-primary text-uppercase fw-bold mb-2" data-i18n="services.eyebrow">Apa yang kami tawarkan</p>
+        <h1 class="display-4 fw-bold" data-i18n="services.title">Layanan IndoSeaman</h1>
+        <p class="lead text-secondary col-lg-8" data-i18n="services.intro">Berbagai layanan untuk mendukung pelaut dan ekosistem maritim Indonesia.</p>
+      </header>
+
+      <section class="row g-4" aria-label="Daftar layanan IndoSeaman" data-i18n-aria-label="services.list">
+        <div class="col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <h2 class="h4 card-title" data-i18n="services.info.title">Informasi Pelaut</h2>
+              <p class="card-text text-secondary" data-i18n="services.info.text">Akses data dan informasi penting untuk membantu aktivitas profesional pelaut.</p>
+              <a class="btn btn-primary" href="#informasi" data-i18n="services.info.action">Pelajari layanan</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <h2 class="h4 card-title" data-i18n="services.community.title">Komunitas Maritim</h2>
+              <p class="card-text text-secondary" data-i18n="services.community.text">Bergabung dengan komunitas untuk berbagi pengalaman, wawasan, dan pengetahuan.</p>
+              <a class="btn btn-primary" href="#komunitas" data-i18n="services.community.action">Gabung komunitas</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <h2 class="h4 card-title" data-i18n="services.career.title">Peluang Karier</h2>
+              <p class="card-text text-secondary" data-i18n="services.career.text">Temukan peluang kerja dan karier di sektor maritim Indonesia.</p>
+              <a class="btn btn-primary" href="#karier" data-i18n="services.career.action">Lihat peluang</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <h2 class="h4 card-title" data-i18n="services.education.title">Pendidikan dan Pelatihan</h2>
+              <p class="card-text text-secondary" data-i18n="services.education.text">Akses materi pembelajaran dan pelatihan untuk mengembangkan kompetensi.</p>
+              <a class="btn btn-primary" href="#pendidikan" data-i18n="services.education.action">Mulai belajar</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <h2 class="h4 card-title" data-i18n="services.management.title">Sistem Informasi Manajemen</h2>
+              <p class="card-text text-secondary" data-i18n="services.management.text">Dukungan informasi terintegrasi untuk kebutuhan perusahaan pelayaran.</p>
+              <a class="btn btn-primary" href="#manajemen" data-i18n="services.management.action">Pelajari sistem</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script type="module" src="/src/components/MainFooter.jsx"></script>
+    <script type="module" src="/src/static-page.js"></script>
+  </body>
+</html>
