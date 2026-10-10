@@ -14,6 +14,8 @@ export default
         layanan: 'layanan.html',
         kontak: 'kontak.html',
         komunitas: 'komunitas.html',
+        diklat: 'diklat.html',
+        sim: 'sim.html',
       },
     },
   },
