@@ -11,7 +11,7 @@
   overflow: hidden;
   isolation: isolate;
   color: #f8fbf9;
-  background: #0a2f3e url('https://images.unsplash.com/photo-1498623116890-37e912163d5d?auto=format&fit=crop&w=2200&q=85') center / cover no-repeat;
+  background: #9ad5ec url('images/ship.jpg') center / cover no-repeat;
 }
 
 .hero-overlay {

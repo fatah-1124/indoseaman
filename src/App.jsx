@@ -34,7 +34,7 @@ function App() {
             </p>
             <div className="hero-actions">
               <a className="hero-button hero-button-primary" href="layanan.html">
-                {isEnglish ? 'Explore now' : 'Mulai menjelajah'} <span aria-hidden="true">-&gt;</span>
+                {isEnglish ? 'Explore now' : 'Layanan Kami'} <span aria-hidden="true">-&gt;</span>
               </a>
               <a className="hero-button hero-button-secondary" href="profil.html">
                 {isEnglish ? 'Discover IndoSeaman' : 'Kenali IndoSeaman'}
@@ -42,10 +42,7 @@ function App() {
             </div>
             <br />
           </div>
-          <div className="hero-location" aria-hidden="true">
-            <span className="location-dot" />
-            {isEnglish ? 'Indonesian waters' : 'Laut Indonesia'}
-          </div>
+          
         </section>
         <Footer />
       </main>

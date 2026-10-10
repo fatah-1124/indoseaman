@@ -66,6 +66,41 @@
         .profile-card, .profile-card + .profile-card { padding: 26px 0; border-left: 0; }
         .profile-card + .profile-card { border-top: 1px solid rgba(255,255,255,.22); }
       }
+      .hero-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        min-height: 52px;
+        padding: 0 22px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+      }
+
+      .hero-button:hover {
+        transform: translateY(-3px);
+      }
+
+      .hero-button-primary {
+        color: #102735;
+        background: #f4c95d;
+      }
+
+      .hero-button-primary:hover {
+        background: #ffda76;
+      }
+
+      .hero-button-secondary {
+        color: #ffffff;
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .hero-button-secondary:hover {
+        border-color: #ffffff;
+        background: rgba(255, 255, 255, 0.12);
+      }
     </style>
   </head>
   <body>
@@ -83,8 +118,11 @@
         <p class="eyebrow" data-i18n="profile.eyebrow">Tentang IndoSeaman</p>
         <h1><span class="title-main" data-i18n="profile.title">Menjaga laut,</span><br /><span data-i18n="profile.titleAccent">menguatkan manusia.</span></h1>
         <p class="intro">
-          <span data-i18n="profile.intro">IndoSeaman adalah ruang digital bagi pelaut dan seluruh ekosistem maritim Indonesia. Kami mempertemukan talenta, pengetahuan, dan peluang agar industri maritim tumbuh lebih terbuka dan berkelanjutan. Platform ini dibangun oleh seorang Software Engineer yang juga masih aktif sebagai pelaut. Untuk mengenalnya lebih detil, silahkan klik</span> <a href="https://www.deepwater.my.id" data-i18n="profile.link">DeepWater Solutions</a>.
+          <span>IndoSeaman adalah ruang digital bagi pelaut, perusahaan pelayaran, manning agency, ship owner dan seluruh ekosistem maritim Indonesia. Kami mempertemukan talenta, pengetahuan, dan peluang agar industri maritim tumbuh lebih terbuka dan berkelanjutan. Platform ini dibangun oleh seorang Software Engineer yang juga masih aktif sebagai pelaut. Untuk mengenalnya lebih detil, silahkan klik</span> <a href="https://www.deepwater.my.id">disini</a>.
         </p>
+        <div>
+          <a class="hero-button hero-button-primary" href="layanan.html">Layanan Kami</a>
+        </div>
 
         <section class="profile-grid" aria-label="Nilai utama IndoSeaman" data-i18n-aria-label="profile.values">
           <article class="profile-card">

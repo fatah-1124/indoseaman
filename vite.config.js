@@ -2,7 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default 
+  defineConfig({
   plugins: [react()],
   base: '/indoseaman/',
   build: {
@@ -12,6 +13,7 @@ export default defineConfig({
         profil: 'profil.html',
         layanan: 'layanan.html',
         kontak: 'kontak.html',
+        komunitas: 'komunitas.html',
       },
     },
   },
