@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Profil IndoSeaman, platform maritim Indonesia." />
+    
     <title>Profil IndoSeaman</title>
     <style>
       :root {
@@ -21,8 +22,8 @@
 
       .profile-page {
         min-height: 100vh;
-        color: #ffffff;
-        background: linear-gradient(135deg, #071d2b 0%, #0a3443 58%, #0b5360 100%);
+        background-color: #d7dcfa;
+        
       }
 
       .profile-nav {
@@ -32,19 +33,22 @@
         width: min(1126px, calc(100% - 48px));
         margin: 0 auto;
         padding: 26px 0;
+        color: #030b4e;
       }
 
-      .brand { font-family: Georgia, serif; font-size: 1.35rem; font-weight: 700; text-decoration: none; }
-      .back-link { color: #f4c95d; font-size: 0.85rem; font-weight: 700; text-decoration: none; }
+      .brand { color: #03107e; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 700; text-decoration: none; }
+      .back-link { color: #03107e; font-size: 0.85rem; font-weight: 700; text-decoration: none; }
       .profile-page h1 .title-main { color: #f7faf8; }
       .static-language-switcher { display: flex; align-items: center; gap: 0.35rem; margin-left: auto; margin-right: 1.25rem; }
-      .static-language-button { padding: 0.25rem 0.45rem; border: 1px solid rgba(255,255,255,.55); border-radius: 4px; color: #fff; background: transparent; font-size: .75rem; font-weight: 600; cursor: pointer; }
+      .static-language-button { padding: 0.25rem 0.45rem; border: 1px solid rgba(12, 12, 12, 0.993); border-radius: 4px; color: #0e0d0d; background: transparent; font-size: .75rem; font-weight: 600; cursor: pointer; }
       .static-language-button:hover, .static-language-button:focus-visible { color: #17212b; background: #fff; }
 
       .profile-hero {
         width: min(1126px, calc(100% - 48px));
         margin: 0 auto;
         padding: 84px 0 100px;
+        background-color: #0a114e;
+        border-radius: 20px;
       }
 
       .eyebrow { color: #f4c95d; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
@@ -56,7 +60,7 @@
       .profile-card { padding: 30px 28px 34px 0; }
       .profile-card + .profile-card { padding-left: 28px; border-left: 1px solid rgba(255,255,255,.22); }
       .profile-card strong { display: block; margin-bottom: 10px; color: #f4c95d; font-family: Georgia, serif; font-size: 2.3rem; font-weight: 400; }
-      .profile-card h2 { margin: 0 0 10px; font-size: 1rem; }
+      .profile-card h2 { color: #ffffff; margin: 0 0 10px; font-size: 1rem; }
       .profile-card p { margin: 0; color: rgba(247, 250, 248, 0.65); font-size: .92rem; line-height: 1.65; }
 
       @media (max-width: 700px) {
@@ -101,29 +105,32 @@
         border-color: #ffffff;
         background: rgba(255, 255, 255, 0.12);
       }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
     </style>
   </head>
   <body>
     <div class="profile-page">
       <nav class="profile-nav" aria-label="Navigasi profil">
         <a class="brand" href="index.html">IndoSeaman</a>
-        <div class="static-language-switcher" aria-label="Pilih Bahasa">
+        <!-- <div class="static-language-switcher" aria-label="Pilih Bahasa">
           <button class="static-language-button" type="button" data-language="id">ID</button>
           <button class="static-language-button" type="button" data-language="en">EN</button>
-        </div>
+        </div> -->
         <a class="back-link" href="index.html">&larr; <span data-i18n="nav.back">Kembali ke beranda</span></a>
       </nav>
-
-      <main class="profile-hero">
+      <main class="profile-hero p-4 mb-4">
         <p class="eyebrow" data-i18n="profile.eyebrow">Tentang IndoSeaman</p>
         <h1><span class="title-main" data-i18n="profile.title">Menjaga laut,</span><br /><span data-i18n="profile.titleAccent">menguatkan manusia.</span></h1>
-        <p class="intro">
-          <span>IndoSeaman adalah ruang digital bagi pelaut, perusahaan pelayaran, manning agency, ship owner dan seluruh ekosistem maritim Indonesia. Kami mempertemukan talenta, pengetahuan, dan peluang agar industri maritim tumbuh lebih terbuka dan berkelanjutan. Platform ini dibangun oleh seorang Software Engineer yang juga masih aktif sebagai pelaut. Untuk mengenalnya lebih detil, silahkan klik</span> <a href="https://www.deepwater.my.id">disini</a>.
-        </p>
-        <div>
-          <a class="hero-button hero-button-primary" href="layanan.html">Layanan Kami</a>
+        <p class="intro" data-i18n="profile.intro"></p> 
+        
+        <div class="hero-actions">
+          <a class="hero-button hero-button-primary" data-i18n="services.title" href="layanan.html"></a>
+          <a class="hero-button hero-button-secondary" data-i18n="founder.web" href="https://www.deepwater.my.id"></a>
         </div>
-
         <section class="profile-grid" aria-label="Nilai utama IndoSeaman" data-i18n-aria-label="profile.values">
           <article class="profile-card">
             <strong>01</strong>
@@ -144,6 +151,7 @@
       </main>
       <div id="footer"></div>
     </div>
+    <script type="module" src="/src/components/MainNavbar.jsx"></script>
     <script type="module" src="/src/components/MainFooter.jsx"></script>
     <script type="module" src="/src/static-page.js"></script>
     </body>

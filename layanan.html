@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sistem Informasi Manajemen" />
+    <meta name="description" content="Berbagai layanan untuk mendukung pelaut dan ekosistem maritim Indonesia." data-i18n-content="page.services.description" />
     <link rel="stylesheet" href="./src/assets/bootstrap.min.css" />
     <style>
       body {
@@ -38,7 +38,7 @@
         background: rgba(255, 255, 255, 0.94);
       }
     </style>
-    <title>Daftar Layanan IndoSeaman</title>
+    <title data-i18n="page.services.title">Layanan IndoSeaman</title>
   </head>
   <body>
     <div id="navbar"></div>
@@ -48,14 +48,14 @@
     <main class="container py-5">
       <header class="mb-5">
         <p class="text-primary text-uppercase fw-bold mb-2" data-i18n="services.eyebrow">Apa yang kami tawarkan</p>
-        <h1 class="display-4 fw-bold" data-i18n="services.title">Layanan IndoSeaman</h1>
+        <h1 class="display-4 fw-bold" data-i18n="services.title">Layanan Kami</h1>
         <p class="lead text-secondary col-lg-8" data-i18n="services.intro">Berbagai layanan untuk mendukung pelaut dan ekosistem maritim Indonesia.</p>
       </header>
 
       <section class="row g-4" aria-label="Daftar layanan IndoSeaman" data-i18n-aria-label="services.list">
         <div class="col-md-6 col-lg-4">
           <article class="card h-100 shadow-sm">
-            <div class="card-body p-4">
+            <div class="card-body">
               <h2 class="h4 card-title" data-i18n="services.career.title">Peluang Karier</h2>
               <p class="card-text text-secondary" data-i18n="services.career.text">Temukan peluang kerja dan karier di sektor maritim Indonesia.</p>
               <a class="btn btn-primary" href="http://localhost:8000/karir" data-i18n="services.career.action">Lihat peluang</a>
@@ -67,7 +67,7 @@
           <article class="card h-100 shadow-sm">
             <div class="card-body p-4">
               <h2 class="h4 card-title" data-i18n="seafarer.list.title">Pelaut Terverifikasi</h2>
-              <p class="card-text text-secondary" data-i18n="seafarer.list.text">Data pelaut yang terdaftar di platform ini, terverifikasi berdasarkan kode pelaut. Memudahkan Manning Agency/Ship Owner untuk untuk mencari kandidat kru kapal.</p>
+              <p class="card-text text-secondary" data-i18n="seafarer.list.text">Data pelaut terdaftar di platform ini dan terverifikasi berdasarkan kode pelaut, untuk membantu agen pengawakan dan pemilik kapal mencari kandidat kru.</p>
               <a class="btn btn-primary" href="http://localhost:8000/pelaut" data-i18n="seafarer.list.action">Lihat Pelaut</a>
               <a href="http://localhost:8000/pelaut/daftar" class="btn btn-secondary" data-i18n="seafarer.list.add">Registrasi Pelaut</a>
             </div>
@@ -77,9 +77,9 @@
           <article class="card h-100 shadow-sm">
             <div class="card-body p-4">
               <h2 class="h4 card-title" data-i18n="companies.info.title">Perusahaan Resmi</h2>
-              <p class="card-text text-secondary" data-i18n="companies.info.text">Daftar perusahaan resmi di Indonesia, baik perusahaan lokal maupun perwakilan internasional. Memudahkan pelaut untuk mencari peluang kerja dengan aman dan nyaman.</p>
+              <p class="card-text text-secondary" data-i18n="companies.info.text">Daftar perusahaan resmi di Indonesia, termasuk perusahaan lokal dan perwakilan internasional, serta temukan peluang kerja dengan lebih yakin.</p>
               <a class="btn btn-primary" href="http://localhost:8000/perusahaan" data-i18n="companies.info.action">Lihat Perusahaan</a>
-              <a class="btn btn-secondary" href="http://localhost:8000/perusahaan/daftar" data-i18n="companies.info.register">Registrasi</a>
+              <a class="btn btn-secondary" href="http://localhost:8000/perusahaan/daftar" data-i18n="companies.info.register">Registrasi Perusahaan</a>
             </div>
           </article>
         </div>
@@ -87,8 +87,8 @@
           <article class="card h-100 shadow-sm">
             <div class="card-body p-4">
               <h2 class="h4 card-title" data-i18n="services.management.title">Sistem Informasi Manajemen</h2>
-              <p class="card-text text-secondary">Dukungan sistem informasi terintegrasi untuk kebutuhan perusahaan pelayaran.</p>
-              <a class="btn btn-primary" href="sim.html">Pelajari layanan</a>
+              <p class="card-text text-secondary" data-i18n="services.management.text">Dukungan sistem informasi terintegrasi untuk kebutuhan perusahaan pelayaran.</p>
+              <a class="btn btn-primary" href="sim.html" data-i18n="services.management.action">Pelajari sistem</a>
             </div>
           </article>
         </div>
@@ -114,8 +114,11 @@
         
       </section>
       <br>
-      <h5>Didukung Oleh:</h5>
-      <a href="https://portal.idcloudhost.com/r/18227" target="_blank" rel="noopener"><img src="https://idcloudhost.com/wp-content/uploads/2017/01/IDCloudHost-SSD-Cloud-Hosting-Indonesia-300x250.jpg" alt="IDCloudHost" width="300" height="250"></a>
+      <div>
+        <h5 data-i18n="site.supported">Didukung Oleh:</h5>
+        <a href="https://portal.idcloudhost.com/r/18227" target="_blank" rel="noopener"><img src="https://idcloudhost.com/wp-content/uploads/2017/01/IDCloudHost-SSD-Cloud-Hosting-Indonesia-300x250.jpg" alt="IDCloudHost" width="300" height="250"></a>
+      </div>
+      
     </main>
     <div id="footer"></div>
     <script type="module" src="/src/components/MainFooter.jsx"></script>

@@ -34,7 +34,10 @@ function App() {
             </p>
             <div className="hero-actions">
               <a className="hero-button hero-button-primary" href="layanan.html">
-                {isEnglish ? 'Explore now' : 'Layanan Kami'} <span aria-hidden="true">-&gt;</span>
+                {isEnglish ? 'Explore now' : 'Layanan Kami'}
+              </a>
+              <a className="hero-button hero-button-secondary" href="http://localhost:8000/karir">
+                {isEnglish ? 'Job Vacancy' : 'Peluang Kerja'} 
               </a>
               <a className="hero-button hero-button-secondary" href="profil.html">
                 {isEnglish ? 'Discover IndoSeaman' : 'Kenali IndoSeaman'}

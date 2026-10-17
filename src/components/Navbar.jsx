@@ -4,8 +4,8 @@ import '../assets/bootstrap.bundle.min.js'
 import '../assets/global.css'
 import { useEffect, useState } from 'react'
 
-function Navbar () {
-    const [language, setLanguage] = useState(() => window.localStorage.getItem('site-language') || 'id')
+function Navbar() {
+    const [language, setLanguage] = useState(() => window.localStorage.getItem('site-language') || document.documentElement.lang || 'id')
 
     useEffect(() => {
         const handleLanguageChange = (event) => setLanguage(event.detail)
@@ -20,14 +20,20 @@ function Navbar () {
     }
 
     return (
-        <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">IndoSeaman</a>
-            <div class="static-language-switcher ms-auto me-3" aria-label="Pilih Bahasa">
-            <button class="static-language-button" type="button" data-language="id">ID</button>
-            <button class="static-language-button" type="button" data-language="en">EN</button>
+        <nav className="navbar navbar-dark bg-dark">
+        <div className="container">
+            <a className="navbar-brand fw-bold" href="index.html">IndoSeaman</a>
+            <div className="language-switcher" aria-label={language === 'en' ? 'Choose language' : 'Pilih Bahasa'}>
+                <button className="language-button" type="button" onClick={() => changeLanguage('id')} title="Bahasa Indonesia" aria-pressed={language === 'id'}>
+                    <span className="language-flag language-flag-id" aria-hidden="true" />
+                    <span>ID</span>
+                </button>
+                <button className="language-button" type="button" onClick={() => changeLanguage('en')} title="English" aria-pressed={language === 'en'}>
+                    <span className="language-flag language-flag-en" aria-hidden="true" />
+                    <span>EN</span>
+                </button>
             </div>
-            <a class="btn btn-outline-light btn-sm" href="index.html" data-i18n="nav.back">Kembali ke beranda</a>
+            <a className="btn btn-outline-light btn-sm" href="index.html" data-i18n="nav.back">{language === 'en' ? 'Back to Home' : 'Kembali ke Beranda'}</a>
         </div>
         </nav>   
     )
