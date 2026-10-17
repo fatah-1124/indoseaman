@@ -8,6 +8,9 @@ const translations = {
     'nav.contact': 'Kontak',
     'nav.back': 'Kembali ke beranda',
     'language.label': 'Pilih Bahasa',
+    'profile.nav': 'Navigasi profil',
+    'page.profile.title': 'Profil IndoSeaman',
+    'page.profile.description': 'Profil IndoSeaman, platform maritim Indonesia.',
     'profile.eyebrow': 'Tentang IndoSeaman',
     'profile.title': 'Menjaga laut,',
     'profile.titleAccent': 'menguatkan manusia.',
@@ -105,6 +108,9 @@ const translations = {
     'nav.contact': 'Contact',
     'nav.back': 'Back to home',
     'language.label': 'Choose language',
+    'profile.nav': 'Profile navigation',
+    'page.profile.title': 'About IndoSeaman',
+    'page.profile.description': 'Learn about IndoSeaman, Indonesia\'s maritime platform.',
     'profile.eyebrow': 'About IndoSeaman',
     'profile.title': 'Protecting the sea,',
     'profile.titleAccent': 'strengthening people.',
@@ -220,6 +226,10 @@ function applyLanguage(language) {
   document.querySelectorAll('[data-i18n-content]').forEach((element) => {
     const value = dictionary[element.dataset.i18nContent]
     if (value) element.setAttribute('content', value)
+  })
+
+  document.querySelectorAll('[data-language]').forEach((button) => {
+    button.setAttribute('aria-pressed', String(button.dataset.language === selectedLanguage))
   })
 
   localStorage.setItem('site-language', selectedLanguage)

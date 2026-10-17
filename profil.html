@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Profil IndoSeaman, platform maritim Indonesia." />
+    <meta name="description" content="Profil IndoSeaman, platform maritim Indonesia." data-i18n-content="page.profile.description" />
     
-    <title>Profil IndoSeaman</title>
+    <title data-i18n="page.profile.title">Profil IndoSeaman</title>
     <style>
       :root {
         color: #f7faf8;
@@ -114,22 +114,22 @@
   </head>
   <body>
     <div class="profile-page">
-      <nav class="profile-nav" aria-label="Navigasi profil">
+      <nav class="profile-nav" aria-label="Navigasi profil" data-i18n-aria-label="profile.nav">
         <a class="brand" href="index.html">IndoSeaman</a>
-        <!-- <div class="static-language-switcher" aria-label="Pilih Bahasa">
-          <button class="static-language-button" type="button" data-language="id">ID</button>
-          <button class="static-language-button" type="button" data-language="en">EN</button>
-        </div> -->
+        <div class="static-language-switcher" aria-label="Pilih Bahasa" data-i18n-aria-label="language.label">
+          <button class="static-language-button" type="button" data-language="id" aria-label="Bahasa Indonesia" aria-pressed="true">ID</button>
+          <button class="static-language-button" type="button" data-language="en" aria-label="English" aria-pressed="false">EN</button>
+        </div>
         <a class="back-link" href="index.html">&larr; <span data-i18n="nav.back">Kembali ke beranda</span></a>
       </nav>
       <main class="profile-hero p-4 mb-4">
         <p class="eyebrow" data-i18n="profile.eyebrow">Tentang IndoSeaman</p>
         <h1><span class="title-main" data-i18n="profile.title">Menjaga laut,</span><br /><span data-i18n="profile.titleAccent">menguatkan manusia.</span></h1>
-        <p class="intro" data-i18n="profile.intro"></p> 
+        <p class="intro" data-i18n="profile.intro">IndoSeaman adalah ruang digital bagi pelaut dan seluruh ekosistem maritim Indonesia. Kami mempertemukan talenta, pengetahuan, dan peluang agar industri maritim tumbuh lebih terbuka dan berkelanjutan. Platform ini dibangun oleh seorang Software Developer | Data Consultant yang pernah aktif sebagai pelaut, selama lebih dari satu dekade.</p> 
         
         <div class="hero-actions">
-          <a class="hero-button hero-button-primary" data-i18n="services.title" href="layanan.html"></a>
-          <a class="hero-button hero-button-secondary" data-i18n="founder.web" href="https://www.deepwater.my.id"></a>
+          <a class="hero-button hero-button-primary" data-i18n="services.title" href="layanan.html">Layanan Kami</a>
+          <a class="hero-button hero-button-secondary" data-i18n="founder.web" href="https://www.deepwater.my.id">Profil Pendiri</a>
         </div>
         <section class="profile-grid" aria-label="Nilai utama IndoSeaman" data-i18n-aria-label="profile.values">
           <article class="profile-card">
@@ -151,7 +151,6 @@
       </main>
       <div id="footer"></div>
     </div>
-    <script type="module" src="/src/components/MainNavbar.jsx"></script>
     <script type="module" src="/src/components/MainFooter.jsx"></script>
     <script type="module" src="/src/static-page.js"></script>
     </body>
